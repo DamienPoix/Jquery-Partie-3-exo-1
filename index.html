@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <title>Exercice 1</title>
+</head>
+<body>
+  <form>
+    <label for="click"></label><input <input type="text" name="click" id="click" />
+    <button type="button" name="spam" id="spam">Spam clique ici!</button>
+  </form>
+  <script src="jquery-3.2.1.js"></script>
+  <script>
+  $(document).ready(function(){
+    var nClick = 0;
+    $('#spam').click(function(){
+      nClick ++;
+      $('#click').val(nClick);
+    });
+  });
+  </script>
+</body>
+</html>
